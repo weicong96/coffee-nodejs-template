@@ -19,7 +19,7 @@ class App
         @config = config
         @request = request
         @moment = moment
-
+        @q = q
         @router.use (req, res, next)=>
             res.setHeader "Access-Control-Allow-Origin", "*"
             res.setHeader "Access-Control-Allow-Methods", "GET, POST, PUT, PATCH, OPTIONS, DELETE"
